@@ -2,8 +2,8 @@
 Actividad 1 - Desarrollo de Aplicaciones en Red
 
 
-## 🧩 Descripción del proyecto
-Este proyecto forma parte de la **Actividad 1** de la asignatura *Desarrollo de Aplicaciones en Red*.  
+## 🧩 Descripción del Blog
+Este blog forma parte de la **Actividad 1** de la asignatura *Desarrollo de Aplicaciones en Red*.  
 Consiste en la creación de un **blog personal sencillo**, desarrollado utilizando **HTML, CSS y JavaScript**.  
 El objetivo principal es practicar la estructura básica de un sitio web, aplicar estilos con CSS y añadir una pequeña funcionalidad con JavaScript.
 
@@ -31,9 +31,9 @@ El blog cuenta con tres páginas principales:
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Estructura del blog
 ```
-Proyecto/
+yfontanet.github.io/
 │
 ├── index.html
 ├── quiensoy.html
@@ -57,7 +57,7 @@ Proyecto/
 
 ---
 
-## 🚀 Cómo visualizar el proyecto
+## 🚀 Cómo visualizar el blog
 1. Descarga o clona este repositorio:  
    ```bash
    git clone https://github.com/tuusuario/blog-personal.git
