@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Act 1</title>
+        <link rel="icon" sizes="24x24" href="icon/favicon.png">
+        <!-- enlace al archivo CSS principal -->
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- CABECERA -->
+        <header>
+            <img src="icon/header2.png" alt="Imagen de cabecera">
+        </header>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="menu-container">
+            <!-- botón del menú -->
+            <button id="menu-toggle">
+                <img src="icon/menu.png" alt="Menú" />
+            </button>
+            <!-- lista de entradas del menú -->
+            <ul id="menu" class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quiensoy.html">¿Quién soy?</a></li>
+                <li><a href="unir.html">UNIR</a></li>
+            </ul>
+        </nav>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main>
+            <h2>¿Quién soy?</h2>
+
+            <!-- sección imagen + texto -->
+            <section class="principal">
+                <img src="img/yo.png" alt="Imagen de presentación" class="img-general img-perfil">
+                <p>
+                    Soy Yaiza Fontanet, estudiante del 
+                    <strong>Grado en Ingeniería Informática </strong>
+                    en la Universidad Internacional de La Rioja.
+                    <br><br>
+                    Entre otras asignaturas, estoy realizando los créditos de Desarrollo de Aplicaciones en Red. Tengo algún conocimiento previo, pero con mucho margen de mejora.
+                    <br><br><br>
+                    <!-- enlaces de contacto -->
+                    <a href="mailto:yaiza.fontanet222@comunidadunir.net"><img src="/icon/mail.png" alt="Mail" class="icon-media">  yaiza.fontanet222@comunidadunir.net</a>
+                    <br><br>
+                    <a href="https://github.com/yfontanet" target="_blank"><img src="icon/github.png" alt="GitHub" class="icon-media">  yfontanet</a>
+                </p>
+            </section>
+
+            <!-- sección texto -->
+            <section class="secundaria">
+                <h3>Estudios previos</h3>
+                <p>
+                    - Ciclo Formativo de Grado Medio en Sistemas Microinformáticos y Redes (SMX)
+                    <br>
+                    - Ciclo Formativo de Grado Superior en Administración de Sistemas Informáticos y Redes (ASIX)
+                    <br>
+                    - Curso de Especialización en Inteligencia Artificial y Big Data
+                    <br><br>
+                    Estos estudios los he realizado en el Instituto Joan d'Àustria, en Sant Marti (Barcelona).
+                </p>
+            </section>
+            
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer>
+            <img src="icon/footer.png" alt="Imagen del pie de página">
+            <p>© 2025 - 2026 | Yaiza Fontanet | Universidad Internacional de La Rioja</p>
+        </footer>
+        <!-- script para la funcionalidad del menú -->
+        <script src="menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+/* CONFIGURACIÓN GLOBAL */
+html, body {
+  margin: 0; /* elimina márgenes por defecto */
+  padding: 0; /* elimina rellenos por defecto */
+  height: 100%; /* asegura que ocupen toda la altura */
+  color: #333; /* color de texto */
+  font-family: Arial, sans-serif; /* fuente de texto */
+}
+
+body {
+  min-height: 100vh; /* define la altura mínima del cuerpo */
+}
+
+/* CABECERA */
+header {
+  position: relative; /* para posicionar elementos dentro */
+  width: 100%; /* asegura que ocupa todo el ancho */
+  height: auto; /* altura automática según contenido */
+  overflow: hidden; /* evita desbordamientos */
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block; /* elimina espacio extra debajo de imágenes */
+  object-fit: contain; /* mantiene proporciones */
+}
+
+/* MENÚ */
+.menu-container {
+  position: sticky; /* mantiene el menú visible al bajar y subir */
+  top: 0; /* posición superior */
+  z-index: 1000; /* asegura que esté por encima de otros elementos */
+  background-color: #fff; /* fondo blanco */
+  display: flex;
+  justify-content: left; /* alinea a la izquierda */
+  align-items: center; /* centra verticalmente */
+  padding: 10px; /* espacio interno */
+}
+
+#menu-toggle {
+  background: none; /* sin fondo */
+  border: none; /* sin borde */
+  cursor: pointer; /* cursor de mano */
+  margin-right: 15px; /* espacio a la derecha */
+}
+
+#menu-toggle img {
+  width: 32px;
+  height: 32px;
+}
+
+/* lista principal del menú */
+.menu {
+  list-style: none; /* elimina viñetas */
+  display: none; 
+  flex-direction: row; /* disposición horizontal */
+  gap: 20px; /* espacio entre elementos */
+  padding: 0;
+  margin: 0;
+}
+
+/* estilo de los enlaces */
+.menu li a {
+  text-decoration: none; /* sin subrayado */
+  color: #8423df;
+  font-weight: bold; /* negrita */
+  transition: color 0.3s; /* transición suave al cambiar color */
+}
+
+.menu li a:hover {
+  color: #b67edd; /* color al pasar el ratón */
+}
+
+/* clase que se activa con JavaScript */
+.menu.show {
+  display: flex;
+}
+
+/* TITULOS */
+main h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* tamaño modo responsivo */
+  color: #8a2be2;                     
+  text-align: center; /* centra el texto */
+  margin-bottom: 40px; /* espacio inferior */
+  letter-spacing: 1px; /* espacio entre letras */
+  text-shadow: 0 3px 10px rgba(138, 43, 226, 0.3); /* sombra de texto */
+  font-weight: 800; /* grosor de fuente */
+  transition: transform 0.3s ease, text-shadow 0.3s ease; 
+  cursor: default; 
+}
+
+/* efecto al pasar el ratón por encima */
+main h1:hover {
+  transform: scale(1.08); /* agranda ligeramente */
+  text-shadow: 0 5px 20px rgba(138, 43, 226, 0.6);
+}
+
+main h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);  
+  color: #8a2be2;                     
+  text-align: center;
+  margin-bottom: 80px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+main h3 {
+  font-size: clamp(0.8rem, 2.5vw, 1.5rem);  
+  font-style: italic; /* estilo cursiva */
+  color: #8a2be2;                     
+  text-align: left;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+  padding: 20px;
+  max-width: 70%; /* controla el ancho máximo del contenido */
+  margin: 0 auto;
+  flex: 1; /* permite que el main crezca para llenar el espacio disponible */
+}
+
+main section.principal {
+  display: flex; /* disposición en fila */
+  align-items: center; 
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* importante para adaptarse a las pantallas */
+  margin: 0 auto;
+  text-align: left;
+}
+
+main section.principal .texto {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+main section.principal ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+main section.secundaria {
+  margin-top: 60px;
+  line-height: 1.5;
+}
+
+main section p {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* estilo de los enlaces */
+main a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+
+/* IMÁGENES E ICONOS */
+.img-general {
+  width: 45%;
+  min-width: 280px;
+  height: auto;
+  margin-right: 50px;
+  border-radius: 16px; /* bordes redondeados */
+}
+
+.img-perfil {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.img-perfil:hover {
+  transform: scale(1.05);
+}
+
+.icon-media {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle; /* alinea con el texto */
+  margin-right: 8px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+footer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+footer p {
+  color: black;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* centra horizontalmente */
+  margin: 0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
